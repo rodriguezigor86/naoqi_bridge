@@ -44,3 +44,6 @@ naoqi_msgs/msg/*Action.msg
 naoqi_msgs/msg/*Feedback.msg
 naoqi_msgs/msg/*Goal.msg
 naoqi_msgs/msg/*Result.msg
+
+# Backup files
+*~

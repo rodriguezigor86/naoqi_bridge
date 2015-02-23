@@ -56,7 +56,7 @@ class NaoqiMic (ALModule, NaoqiNode):
         self.config = defaultdict(returnNone)
 
         # ROS publishers
-        self.pub_audio_ = rospy.Publisher('~audio_raw', AudioBuffer)
+        self.pub_audio_ = rospy.Publisher('~audio_raw', AudioBuffer, queue_size=1, latch=True)
 
         # initialize the parameter server
         self.srv = Server(NaoqiMicrophoneConfig, self.reconfigure)
